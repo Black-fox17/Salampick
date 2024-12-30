@@ -16,7 +16,7 @@
     </a>
     <div class="container">
         <h2 style="text-align: center;">Sign In</h2>
-        <form action="{{ route('signin_post') }}" method="POST">
+        <form action="{{ route('login') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="email">Email:</label>

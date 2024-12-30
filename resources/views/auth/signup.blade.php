@@ -16,7 +16,7 @@
     </a>
     <div class="container" style="height:150vh">
         <h2 style="text-align: center;">Sign Up</h2>
-        <form action="{{ route('signup_post') }}" method="POST">
+        <form action="{{ route('register') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="name">Name:</label>
