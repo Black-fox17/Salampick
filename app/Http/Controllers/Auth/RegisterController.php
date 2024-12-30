@@ -48,11 +48,11 @@ class RegisterController extends Controller
      */
     public function showRegistrationForm()
     {
-        return view('auth.signup');
+        return view('auth.login');
     }
     public function showSignUpForm()
     {
-        return view('auth.signup');
+        return view('auth.register');
     }
     protected function validator(array $data)
     {
