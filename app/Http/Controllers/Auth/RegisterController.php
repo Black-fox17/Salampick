@@ -46,6 +46,14 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+    public function showRegistrationForm()
+    {
+        return view('auth.signup');
+    }
+    public function showSignUpForm()
+    {
+        return view('auth.signup');
+    }
     protected function validator(array $data)
     {
         return Validator::make($data, [
