@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\cars;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,16 +22,6 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-<?php
-
-use App\Http\Controllers\HomeController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\CartController;
-use App\Http\Controllers\cars;
-
-
 Auth::routes();
 
 Route::get('/signup', [App\Http\Controllers\Auth\RegisterController::class, 'showSignUpForm'])->name('signup');
