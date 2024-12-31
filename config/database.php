@@ -85,8 +85,8 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('postgresql://salam_pick_user:b7dR8n1u6pflepqOPIpGiks1mG7SK5i3@dpg-ctoq0lt2ng1s73bl3e50-a/salam_pick'),
-            'host' => env('DB_HOST', 'postgresql://salam_pick_user:b7dR8n1u6pflepqOPIpGiks1mG7SK5i3@dpg-ctoq0lt2ng1s73bl3e50-a/salam_pick'),
-            'port' => env('DB_PORT', '3306'),
+            'host' => env('DB_HOST', 'dpg-ctoq0lt2ng1s73bl3e50-a'),
+            'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'postgres'),
             'username' => env('DB_USERNAME', 'postgres'),
             'password' => env('DB_PASSWORD', 'b7dR8n1u6pflepqOPIpGiks1mG7SK5i3'),
