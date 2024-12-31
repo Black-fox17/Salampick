@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlite'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,12 +84,12 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
+            'url' => env('postgresql://salam_pick_user:b7dR8n1u6pflepqOPIpGiks1mG7SK5i3@dpg-ctoq0lt2ng1s73bl3e50-a/salam_pick'),
+            'host' => env('DB_HOST', 'postgresql://salam_pick_user:b7dR8n1u6pflepqOPIpGiks1mG7SK5i3@dpg-ctoq0lt2ng1s73bl3e50-a/salam_pick'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'postgres'),
+            'username' => env('DB_USERNAME', 'postgres'),
+            'password' => env('DB_PASSWORD', 'b7dR8n1u6pflepqOPIpGiks1mG7SK5i3'),
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
